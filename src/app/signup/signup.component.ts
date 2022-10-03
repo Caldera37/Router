@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Order } from '../models/model';
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
+  model: Order = new Order("", "", "", "");
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  onSubmit(): void {
+
+    console.log(this.model);
+
+}
 
 }

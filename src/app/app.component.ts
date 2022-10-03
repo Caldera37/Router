@@ -13,4 +13,6 @@ export class AppComponent {
   toggleEditButton(): void {
     this.isAdmin = !this.isAdmin;
   }
+
+  
 }
